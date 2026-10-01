@@ -1,0 +1,24 @@
+{
+  "name": "shipment-exception-failover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/shipment_brief_service.ts",
+    "demo": "node --experimental-strip-types src/run_delivery_demo.ts",
+    "test": "node --experimental-strip-types --test test/shipment_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^4.104.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
